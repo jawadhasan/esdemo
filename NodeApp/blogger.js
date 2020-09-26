@@ -1,7 +1,6 @@
 const esIndexManager = require('./esIndexManager');
 const jsonDataLoader = require('./jsonDataLoader');
 
-
 //Client Code
 
 let indexManager = new esIndexManager("blog"); //index blog
