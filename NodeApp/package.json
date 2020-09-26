@@ -11,5 +11,8 @@
     "Elastic-Search"
   ],
   "author": "hexquote.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^16.7.1"
+  }
 }
