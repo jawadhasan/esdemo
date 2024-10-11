@@ -3,8 +3,11 @@ const jsonDataLoader = require('./jsonDataLoader');
 
 //Client Code
 
-let indexManager = new esIndexManager("blog"); //index blog
-importJsonData(); //read json file and add data to elastic-search
+let indexManager = new esIndexManager("hcssdevicedata"); //index blog
+indexManager.deleteIndex().then(()=> console.log('deleted.'));
+
+
+//importJsonData(); //read json file and add data to elastic-search
 
 function importJsonData(){
     let documents = jsonDataLoader.loadJsonFile('jsondata.json');
